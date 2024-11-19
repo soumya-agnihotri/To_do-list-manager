@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    background: linear-gradient(135deg,#153677, #4e086f);
+    padding: 80px;
+   
+}
+.content{
+    background-color: white;
+    min-height: 20vh;
+    width:50vw;
+    margin: auto;
+    border-radius: 12px;
+    padding-bottom: 10px;
+}
+.header img{
+    width: 50px;
+    height: 50px;
+}
+.header{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.enter input{
+    padding:10px 180px ;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.enter button{
+    padding:10px 60px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+ul li{
+    list-style: none;
+    padding:10px;
+    padding-left: 35px;
+    font-size: 20px;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    background-image: url(unchecked.png);
+    position:absolute;
+    height:16px;
+    width: 16px;
+    background-size: cover;
+    background-position: center;
+    left:10px;
+    bottom:12px;
+}
+
+ul li span {
+        content: '';
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-image: url(delete.svg);
+        background-size: cover;
+        background-position: center;
+        right: 30px;
+        bottom: 12px;
+}
+.chk{
+    text-decoration: line-through;
+}
+
+.chk::before{
+        background-image: url(checked.png);
+        content:'';
+        position:absolute;
+        height:16px;
+        width: 16px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        left:10px;
+        bottom:12px;
+}
+.hvr:hover{
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
+    transition: 0.45s ease-in-out;
+}
